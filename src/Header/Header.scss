@@ -1,0 +1,81 @@
+.starter {
+  font-size: 18px;
+}
+
+.App {
+  width: 100vw;
+
+  &__header {
+    height: 64px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.1), 0px 0.4px 6.5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-img {
+      margin: 0 7px 0 16px;
+      width: 18px;
+      height: 24px;
+    }
+    
+    &-logo {
+      width: 80px;
+      height: 18px;
+    }
+
+    &-search {
+      width: 17px;
+      height: 17px;
+
+      &--desctop,
+      &-user {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &-user {
+      margin: 0 15px 0 40px;
+    }
+  }
+
+
+  &__button {
+    background-image: url(./img/menu_alt_02.svg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 12px;
+    border: 1px solid transparent;
+    margin: 0 16px 0 30px;
+
+    &--close {
+      width: 18px;
+      height: 12px;
+      border: 1px solid transparent;
+      background-color: #fff;
+      z-index: 2;
+      position: absolute;
+      top: 20px;
+      left: 93%;
+    }
+  }
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1088px;
+}

@@ -1,0 +1,48 @@
+.Nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+
+  @media(min-width: 1088px) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+
+    &--desctop {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+    }
+  }
+
+  &__item {
+    padding-right: 24px;
+  }
+
+  &__link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+
+    &--desctop {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      color: #262626;
+    }
+  }
+
+}
