@@ -77,22 +77,24 @@ export const Header: React.FC = () => {
         )
         : (
           <header className="App__header App__header--desctop">
-            <Nav names={nameOfNav} />
-            <div className="App__header-wrapper">
-              <a href="#search">
-                <img
-                  className="App__header-search--desctop"
-                  src={search}
-                  alt="search"
-                />
-              </a>
-              <a href="#search">
-                <img
-                  className="App__header-user"
-                  src={user}
-                  alt="user"
-                />
-              </a>
+            <div className="header__container">
+              <Nav names={nameOfNav} />
+              <div className="App__header-wrapper">
+                <a href="#search">
+                  <img
+                    className="App__header-search--desctop"
+                    src={search}
+                    alt="search"
+                  />
+                </a>
+                <a href="#search">
+                  <img
+                    className="App__header-user"
+                    src={user}
+                    alt="user"
+                  />
+                </a>
+              </div>
             </div>
           </header>
         )}

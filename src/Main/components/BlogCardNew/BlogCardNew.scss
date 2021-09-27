@@ -10,6 +10,14 @@
     max-width: 1088px;
   }
   
+  &__new-img {
+    margin-top: 18px;
+
+    @media(min-width: 1088px) {
+      margin-top: 48px;
+    }
+  }
+
   &__img {
     width: 100%;
     min-height: 240px;

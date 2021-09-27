@@ -17,7 +17,7 @@ export const BlogCardNew: React.FC<Props> = (props) => {
             {blog.add === 'new' && (
               <>
                 <img
-                  className="Main__new-img"
+                  className="Blog__new-img"
                   src={logo}
                   alt="new blog"
                 />
