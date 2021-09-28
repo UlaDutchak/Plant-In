@@ -69,7 +69,13 @@ export const Header: React.FC = () => {
                 >
                   X
                 </button>
-                <Nav nav={navName} />
+                <button
+                  className="Header__button-wrapper"
+                  type="button"
+                  onClick={handleChange}
+                >
+                  <Nav nav={navName} />
+                </button>
               </>
             )}
           </header>

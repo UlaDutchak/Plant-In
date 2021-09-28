@@ -74,12 +74,18 @@
       width: 18px;
       height: 12px;
       border: 1px solid transparent;
-      background-color: #fff;
+      background-color: transparent;
+      color: #04BF94;
       z-index: 2;
       position: fixed;
       top: 20px;
       left: 93%;
     }
+  }
+
+  &__button-wrapper {
+    border: transparent;
+    
   }
 }
 
