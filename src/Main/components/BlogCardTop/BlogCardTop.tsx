@@ -17,7 +17,7 @@ export const BlogCardTop: React.FC<Props> = (props) => {
               <div
                 id="Blog"
                 className="BlogTop__wrapper"
-                key={blogs.length}
+                key={blog.id}
               >
                 <div
                   className="BlogTop"

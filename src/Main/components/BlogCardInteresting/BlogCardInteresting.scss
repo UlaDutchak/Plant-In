@@ -14,20 +14,28 @@
   
   &__img {
     width: 100%;
-    min-height: 240px;
+    height: 240px;
     border: transparent;
     border-radius: 12px;
     object-fit: cover;
+    transition: 300ms;
 
     @media(min-width: 1088px) {
       max-width: 521px;
       margin: 0 32px 56px 0;
     }
 
-    &--desctop-three {
+    &--desktop-three {
       width: 337px;
       height: 240px;
     }
+  }
+
+  &__img:hover {
+    transform: scale(1.01);
+      @media(min-width: 1088px) {
+        transform: scale(1.1);
+      }
   }
 
   &__data{
@@ -45,7 +53,7 @@
     color: #242424;
     margin: 0 0 8px;
 
-    &--desctop-one {
+    &--desktop-one {
       font-size: 48px;
       line-height: 72px;
       margin: 8px 0 16px;

@@ -8,3 +8,9 @@ interface Blog {
   description: string;
   img: string;
 }
+
+interface Nav {
+  name: string;
+  id: number | string;
+  url: string;
+}

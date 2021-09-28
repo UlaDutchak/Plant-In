@@ -5,8 +5,7 @@ import logo from './img/PlantIn.svg';
 import union from './img/Union.svg';
 import search from './img/search.svg';
 import user from './img/Frame1235.svg';
-
-const nameOfNav = ['Discover', 'My Plants', 'Diseases', 'Blog', 'FAQ', 'Contact Us'];
+import navName from '../api/nav.json';
 
 export const Header: React.FC = () => {
   const [isVisible, setVisible] = useState(false);
@@ -29,31 +28,31 @@ export const Header: React.FC = () => {
     <div className="App">
       {isMobile
         ? (
-          <header className="App__header">
+          <header className="Header">
             {!isVisible && (
               <>
-                <div className="App__header-wrapper">
+                <div className="Header-wrapper">
                   <img
-                    className="App__header-img"
+                    className="Header-img"
                     src={union}
                     alt="unoin"
                   />
                   <img
-                    className="App__header-logo"
+                    className="Header-logo"
                     src={logo}
                     alt="logo"
                   />
                 </div>
-                <div className="App__header-wrapper">
+                <div className="Header-wrapper">
                   <a href="#search">
                     <img
-                      className="App__header-search"
+                      className="Header-search"
                       src={search}
                       alt="search"
                     />
                   </a>
                   <button
-                    className="App__button"
+                    className="Header__button"
                     type="button"
                     onClick={handleChange}
                   >
@@ -64,32 +63,32 @@ export const Header: React.FC = () => {
             {isVisible && (
               <>
                 <button
-                  className="App__button--close"
+                  className="Header__button--close"
                   type="button"
                   onClick={handleChange}
                 >
                   X
                 </button>
-                <Nav names={nameOfNav} />
+                <Nav nav={navName} />
               </>
             )}
           </header>
         )
         : (
-          <header className="App__header App__header--desctop">
+          <header className="Header Header--desktop">
             <div className="header__container">
-              <Nav names={nameOfNav} />
-              <div className="App__header-wrapper">
+              <Nav nav={navName} />
+              <div className="Header-wrapper">
                 <a href="#search">
                   <img
-                    className="App__header-search--desctop"
+                    className="Header-search--desktop"
                     src={search}
                     alt="search"
                   />
                 </a>
                 <a href="#search">
                   <img
-                    className="App__header-user"
+                    className="Header-user"
                     src={user}
                     alt="user"
                   />

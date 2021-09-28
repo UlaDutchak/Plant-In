@@ -30,7 +30,7 @@ export const BlogCardInteresting: React.FC<Props> = (props) => {
                 <div
                   id="Blog"
                   className="BlogInteresting__wrapper"
-                  key={blogs.length}
+                  key={blog.id}
                 >
                   <div
                     className="BlogInteresting"

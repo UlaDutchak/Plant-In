@@ -1,0 +1,32 @@
+[
+  {
+    "name":"Discover",
+    "url":"#",
+    "id":"1"
+  },
+  {
+    "name":"My Plants",
+    "url":"#",
+    "id":"2"
+  },
+  {
+    "name":"Diseases",
+    "url":"https://myplantin.com/diseases",
+    "id":"3"
+  },
+  {
+    "name":"Blog",
+    "url":"#Blog",
+    "id":"4"
+  },
+  {
+    "name":"FAQ",
+    "url":"https://myplantin.com/faq",
+    "id":"5"
+  },
+  {
+    "name":"Contact Us",
+    "url":"https://myplantin.com/contact-us",
+    "id":"6"
+  }
+]

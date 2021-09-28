@@ -2,11 +2,11 @@ import './Nav.scss';
 import React, { useEffect, useState } from 'react';
 
 type Props = {
-  names: string[];
+  nav: Nav[];
 };
 
 export const Nav: React.FC<Props> = (props) => {
-  const { names } = props;
+  const { nav } = props;
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1088);
 
   useEffect(() => {
@@ -21,19 +21,19 @@ export const Nav: React.FC<Props> = (props) => {
 
   return (
     <>
-      <nav className={`${isMobile ? 'Nav' : 'Nav--desctop'}`}>
-        <ul className={`${isMobile ? 'Nav__list' : 'Nav__list--desctop'}`}>
-          {names.map((name: string) => {
+      <nav className="Nav">
+        <ul className="Nav__list">
+          {nav.map((el) => {
             return (
               <li
                 className="Nav__item"
-                key={names.length}
+                key={el.id}
               >
                 <a
-                  className={`${isMobile ? 'Nav__link' : 'Nav__link--desctop'}`}
-                  href={`#${name}`}
+                  className="Nav__link"
+                  href={el.url}
                 >
-                  {name}
+                  {el.name}
                 </a>
               </li>
             );

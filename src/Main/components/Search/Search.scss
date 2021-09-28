@@ -34,6 +34,13 @@
     align-items: center;
 
     color: #242424;
+    @media(min-width: 1088px) {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 27px;
+      color: #242424;
+    }
+    
   }
 
   &__input {
@@ -44,11 +51,16 @@
     box-shadow: 0px 0.470434px 2.21381px rgba(0, 0, 0, 0.0196802);
     border-radius: 12px;
     padding-left: 15px;
+    transition: 300ms;
 
     @media(min-width: 1088px) {
       max-width: 522px;
       height: 56px;
     }
+  }
+
+  &__input:hover {
+    box-shadow: 10px 5px 5px #828282;
   }
 
   &__input::placeholder {
