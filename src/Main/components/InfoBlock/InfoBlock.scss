@@ -10,7 +10,7 @@
   padding: 16px;
   box-sizing: border-box;
 
-  @media(min-width: 1088px) {
+  @media(min-width: 1024px) {
     width: 1088px;
     height: 252px;
     background-image: url(../../img/Frame1273.svg);
@@ -29,7 +29,7 @@
     line-height: 36px;
     color: #04BF94;
 
-    @media(min-width: 1088px) {
+    @media(min-width: 1024px) {
       font-weight: 500;
       font-size: 32px;
       line-height: 48px;
@@ -43,7 +43,7 @@
     line-height: 27px;
     color: #242424;
 
-    @media(min-width: 1088px) {
+    @media(min-width: 1024px) {
       font-size: 24px;
       line-height: 36px;
       color: #000;
@@ -63,7 +63,7 @@
     transition: 300ms;
     cursor: pointer;
     
-    @media(min-width: 1088px) {
+    @media(min-width: 1024px) {
       max-width: 156px;
     }
   }

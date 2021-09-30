@@ -58,9 +58,7 @@ export const Search: React.FC = () => {
           {isMobile
             ? (
               <>
-                <b>Tips&amp;Tricks</b>
-                &nbsp;selected specially&nbsp;
-                <b>for you!</b>
+                <b>Tips&amp;Tricks selected specially for you!</b>
               </>
             )
             : (

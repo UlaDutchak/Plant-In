@@ -5,7 +5,7 @@
   max-width: 800px;
   
   &__wrapper {
-    @media(min-width: 1088px) {
+    @media(min-width: 1024px) {
       display: flex;
       flex-direction: row;
       max-width: 521px;
@@ -20,7 +20,7 @@
     object-fit: cover;
     transition: 300ms;
 
-    @media(min-width: 1088px) {
+    @media(min-width: 1024px) {
       max-width: 521px;
       height: 364px;
       margin: 0 32px 56px 0;
@@ -29,7 +29,7 @@
 
   &__img:hover {
     transform: scale(1.01);
-      @media(min-width: 1088px) {
+      @media(min-width: 1024px) {
         transform: scale(1.1);
       }
   }

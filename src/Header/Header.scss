@@ -20,7 +20,7 @@
     flex-direction: row;
     align-items: center;
 
-    @media(min-width: 1088px) {
+    @media(min-width: 1024px) {
       justify-content: flex-end;
     }
   }
