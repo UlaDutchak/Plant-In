@@ -14,14 +14,14 @@
   
   &__img {
     width: 100%;
-    min-height: 240px;
+    height: 240px;
     border: transparent;
     border-radius: 12px;
     object-fit: cover;
     transition: 300ms;
 
     @media(min-width: 1024px) {
-      max-width: 521px;
+      width: 521px;
       height: 364px;
       margin: 0 32px 56px 0;
     }

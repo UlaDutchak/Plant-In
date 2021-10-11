@@ -6,9 +6,9 @@ export const Footer: React.FC = () => {
     <footer className="Footer">
       <div className="Footer__wrapper">
         <div className="Footer__list">
-          <a href="#service" className="Footer__link">Terms of Service</a>
-          <a href="pr_policy" className="Footer__link">Privacy Policy</a>
-          <a href="sub_polocy" className="Footer__link">Subscription Policy</a>
+          <a href="#blog" className="Footer__link">Terms of Service</a>
+          <a href="#blog" className="Footer__link">Privacy Policy</a>
+          <a href="#blog" className="Footer__link">Subscription Policy</a>
         </div>
         <div className="Footer__info">
           <p className="Footer__info">
